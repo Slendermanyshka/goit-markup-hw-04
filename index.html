@@ -8,7 +8,8 @@
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Roboto:wght@400;500;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css" />
@@ -33,8 +34,11 @@
 
 
                 <ul class="contacts list">
-                    <li class="item"><a href="mailto:info@devstudio.com" target="_blank">info@devstudio.com</a></li>
-                    <li class="item"><a href="tel:380961111111">+38 (096)-111-1111</a></li>
+                    <li class="item"><a href="mailto:info@devstudio.com" target="_blank" class="contacts-icons envelope">
+                        <svg class="envelope"><use href="./images/sprite.svg#envelope"></use>
+                        </svg>info@devstudio.com</a></li>
+                    <li class="item"><a href="tel:380961111111 " class="contacts-icons phone">+38 (096)-111-1111</a>
+                    </li>
                 </ul>
 
             </nav>
@@ -57,7 +61,7 @@
                 <h2 hidden="true"> Особенности </h2>
                 <ul class="specifications list">
 
-                    <li>
+                    <li class="icon-specification antena">
                         <h3 class="sub-title">
                             ВНИМАНИЕ К ДЕТАЛЯМ
                         </h3>
@@ -66,7 +70,7 @@
                         </p>
                     </li>
 
-                    <li>
+                    <li class="icon-specification clock">
                         <h3 class="sub-title">
                             ПУНКТУАЛЬНОСТЬ
                         </h3>
@@ -75,7 +79,7 @@
                         </p>
                     </li>
 
-                    <li>
+                    <li class="icon-specification diagram">
                         <h3 class="sub-title">
                             ПЛАНИРОВАНИЕ
                         </h3>
@@ -84,7 +88,7 @@
                         </p>
                     </li>
 
-                    <li>
+                    <li class="icon-specification cosmonaut">
                         <h3 class="sub-title">
                             СОВРЕМЕННЫЕ ТЕХНОЛОГИИ
                         </h3>
@@ -128,25 +132,96 @@
                         <img src="images/ermakov.jpg" height="260" width="270" alt="Designer" />
                         <h4>Михаил Ермаков</h4>
                         <p>Designer</p>
+                        <div class="list-social">
+                            <a class="icon-social">
+                                <!--insta-->
+                            </a>
+                            <a class="icon-social">
+                                <!--twitter-->
+                            </a>
+                            <a class="icon-social">
+                                <!--facebook-->
+                            </a>
+                            <a class="icon-social">
+                                <!--linkedin-->
+                            </a>
+                        </div>
                     </li>
 
                     <li>
                         <img src="images/taracov.jpg" height="260" width="270" alt="Marketing" />
                         <h4>Николай Тарасов</h4>
                         <p>Marketing</p>
+                        <div class="list-social">
+                            <a class="icon-social">
+                                <!--insta-->
+                            </a>
+                            <a class="icon-social">
+                                <!--twitter-->
+                            </a>
+                            <a class="icon-social">
+                                <!--facebook-->
+                            </a>
+                            <a class="icon-social">
+                                <!--linkedin-->
+                            </a>
+                        </div>
                     </li>
 
                     <li>
                         <img src="images/repina.jpg" height="260" width="270" alt="FrontendDeveloper" />
                         <h4>Ольга Репина</h4>
                         <p>Frontend Developer</p>
+                        <div class="list-social">
+                            <a class="icon-social">
+                                <!--insta-->
+                            </a>
+                            <a class="icon-social">
+                                <!--twitter-->
+                            </a>
+                            <a class="icon-social">
+                                <!--facebook-->
+                            </a>
+                            <a class="icon-social">
+                                <!--linkedin-->
+                            </a>
+                        </div>
                     </li>
 
                     <li>
                         <img src="images/demiyamenko.jpg" height="260" width="270" alt="ProductDesigner" />
                         <h4>Игорь Демьяненко</h4>
                         <p>Product Designer</p>
+                        <div class="list-social">
+                            <a class="icon-social">
+                                <!--insta-->
+                            </a>
+                            <a class="icon-social">
+                                <!--twitter-->
+                            </a>
+                            <a class="icon-social">
+                                <!--facebook-->
+                            </a>
+                            <a class="icon-social">
+                                <!--linkedin-->
+                            </a>
+                        </div>
                     </li>
+
+                </ul>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h3 class="title"> Постоянные клиенты</h3>
+                <ul>
+                    <li></li>
+
+
+
+
+
+
 
                 </ul>
             </div>
@@ -155,20 +230,41 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="logo bottomLogo">
-                <p><span>Web</span>Studio</p>
+        <div class="container footerContainer">
+            <div>
+                <div class="logo bottomLogo">
+                    <p><span>Web</span>Studio</p>
+                </div>
+                <address>
+                    <ul class="address list">
+                        <li><span>г. Киев, Бульвар Леси Украинки, д. 26</span></li>
+                        <li><a href="mailto:info@devstudio.com" target="_blank">info@devstudio.com</a></li>
+                        <li><a href="tel:380961111111">+38 (096)-111-1111</a></li>
+                    </ul>
+                </address>
             </div>
-            <address>
-                <ul class="address list">
-                    <li><span>г. Киев, Бульвар Леси Украинки, д. 26</span></li>
-                    <li><a href="mailto:info@devstudio.com" target="_blank">info@devstudio.com</a></li>
-                    <li><a href="tel:380961111111">+38 (096)-111-1111</a></li>
-                </ul>
+<div class="footerIconsContainer">
 
-            </address>
+    <h4>ПРИСОЕДИНЯЙТЕСЬ</h4>
+    <div class="list-social list-social-footer">
+        <a class="icon-social icon-social-footer">
+            <!--insta-->
+        </a>
+        <a class="icon-social icon-social-footer">
+            <!--twitter-->
+        </a>
+        <a class="icon-social icon-social-footer">
+            <!--facebook-->
+        </a>
+        <a class="icon-social icon-social-footer">
+            <!--linkedin-->
+        </a>
+    </div>
+
+
+</div>
+
         </div>
-
     </footer>
 </body>
 
