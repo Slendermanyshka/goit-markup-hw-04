@@ -155,7 +155,7 @@ body {
 }
 
 .envelope{
-  
+
 }
 
 
@@ -248,10 +248,10 @@ body {
 }
 
 .antena::before {
-  background-image: url(../images/antena.svg);
+  background-image: url(../images/sprite.svg#icon-antena);
 }
 .clock::before {
-  background-image: url(../images/clock.svg);
+  background-image: url(../images/sprite.svg#icon-clock);
 }
 
 .diagram::before {
