@@ -154,25 +154,39 @@ body {
   display: block;
 }
 
-.envelope{
-
+.contacts-icons{
+display: inline-flex;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  fill: #757575;
 }
-
+/*
+.envelope{
+display: inline-block;
+margin-right: 10px;
+fill: #757575;
+}
+*/
 
 .contacts .item:not(:last-child) {
   margin-right: 50px;
 }
-.contacts a:hover {
+.contacts a:hover,.contacts a:focus, .contacts a:hover svg, .contacts a:focus svg{
+  fill: var(--highlightColor);
   color: var(--highlightColor);
 }
-.contacts a:focus {
-  color: var(--highlightColor);
-}
-
+ 
 /*-----body-----*/
-
-.hat {
+.hat{
   background-color: var(--backgroundColorBlack);
+  background-image: linear-gradient(to top, rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/hat_bg.png);
+  background-size: contain;
+
+
+
+}
+.hatContainer {
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -214,11 +228,6 @@ body {
   margin-left: 30px;
   max-width: 270px;
 }
-.specifications li::before {
-  content: "";
-  display: block;
-  height: 120px;
-}
 
 .specifications h3 {
   margin-top: 30px;
@@ -236,31 +245,54 @@ body {
   font-size: 14px;
   font-style: normal;
 }
-.icon-specification::before {
-  display: block;
-  content: "";
+.icon-specification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
+  content: "";
   background-color: #f5f4fa;
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70px 70px;
 }
-
-.antena::before {
-  background-image: url(../images/sprite.svg#icon-antena);
+.client{
+  padding: 94px 0px;
 }
-.clock::before {
-  background-image: url(../images/sprite.svg#icon-clock);
+.client h2{
+  text-align: center;
+  margin: 0%;
+  padding-bottom: 50px;
 }
-
-.diagram::before {
-  background-image: url(../images/diagram.svg);
+.client-list{
+  list-style-type: none;
+  display: flex;
+  justify-content: center; 
 }
-.cosmonaut::before {
-  background-image: url(../images/astronaut.svg);
+.client-item a{
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
-
+.client-item svg{
+  display: block; 
+  margin: auto;
+  padding-top: 20px;
+  fill: #AFB1B8;
+}
+.client-item a:hover{
+  border-color:#2196F3;
+}
+.client-item:hover svg{
+  fill:#2196F3;
+}
+.client-item:not(:last-child){
+  margin-right: 30px;
+}
 .activities {
   display: flex;
   justify-content: center;
@@ -330,8 +362,10 @@ body {
   margin-left: 10px;
 }
 .icon-social {
-  display: block;
+  display: flex;
   content: "";
+  align-items: center;
+  justify-content: center;
   height: 44px;
   width: 44px;
   background-size: 20px 20px;
@@ -341,6 +375,14 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+.teamIconFill{
+  fill: #757575;
+}
+
+.icon-social:hover .teamIconFill{
+  fill: #ffffff;
+}
+
 .icon-social:hover{
   background-color: var(--highlightColor);
 
@@ -372,6 +414,47 @@ margin-top: 20px;
 .teamSectionFIx {
   background-color: #f5f3fa;
 }
+
+
+
+
+.client{
+  padding: 94px 0px;
+}
+.client h2{
+  text-align: center;
+  margin: 0%;
+  padding-bottom: 50px;
+}
+.client-list{
+  list-style-type: none;
+  display: flex;
+  justify-content: center; 
+}
+.client-item a{
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.client-item svg{
+  display: block; 
+  margin: auto;
+  padding-top: 20px;
+  fill: #AFB1B8;
+}
+.client-item a:hover{
+  border-color:#2196F3;
+}
+.client-item:hover svg{
+  fill:#2196F3;
+}
+.client-item:not(:last-child){
+  margin-right: 30px;
+}
+
 
 /*-----------portfolio------------*/
 .portfolioContainerFix {
