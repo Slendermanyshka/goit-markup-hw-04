@@ -155,12 +155,15 @@ body {
 }
 
 .contacts-icons{
-display: inline-flex;
+display: in-block;
+
   width: 16px;
   height: 16px;
   margin-right: 10px;
   fill: #757575;
+
 }
+
 /*
 .envelope{
 display: inline-block;
@@ -168,10 +171,18 @@ margin-right: 10px;
 fill: #757575;
 }
 */
-
+.contacts .item{
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 .contacts .item:not(:last-child) {
   margin-right: 50px;
+
+
 }
+
 .contacts a:hover,.contacts a:focus, .contacts a:hover svg, .contacts a:focus svg{
   fill: var(--highlightColor);
   color: var(--highlightColor);
@@ -182,9 +193,6 @@ fill: #757575;
   background-color: var(--backgroundColorBlack);
   background-image: linear-gradient(to top, rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/hat_bg.png);
   background-size: contain;
-
-
-
 }
 .hatContainer {
   height: 600px;
@@ -199,16 +207,18 @@ fill: #757575;
   margin-top: 40px;
   font-size: 16px;
   color: #ffffff;
+  border: 0px;
   background-color: var(--highlightColor);
-}
+}/*
 .hat button:hover,
 .hat button:focus {
   color: var(--backgroundColorBlack);
   background-color: #ffffff;
 }
-
+*/
 .hat h1 {
   font-size: 44px;
+  font-weight: 900;
   line-height: 60px;
   color: #ffffff;
 
@@ -345,10 +355,11 @@ fill: #757575;
   font-weight: normal;
   font-size: 16px;
   color: #757575;
-  line-height: 60px;
+  line-height: 18.75px;
+  margin-top: 10px;
 }
 .team h4 {
-  margin-top: 10px;
+  margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
   color: #212121;
@@ -370,8 +381,8 @@ fill: #757575;
   width: 44px;
   background-size: 20px 20px;
   border-radius: 50%;
-  
-
+  border: 0px;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -379,11 +390,11 @@ fill: #757575;
   fill: #757575;
 }
 
-.icon-social:hover .teamIconFill{
+.icon-social:hover .teamIconFill ,.icon-social:focus .teamIconFill  {
   fill: #ffffff;
 }
 
-.icon-social:hover{
+.icon-social:hover,.icon-social:focus{
   background-color: var(--highlightColor);
 
 }
@@ -409,6 +420,7 @@ margin-top: 20px;
 .icon-social-footer{
   fill: #ffffff;
   color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .teamSectionFIx {
@@ -421,10 +433,19 @@ margin-top: 20px;
 .client{
   padding: 94px 0px;
 }
+
 .client h2{
-  text-align: center;
+
   margin: 0%;
   padding-bottom: 50px;
+}
+.client-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+margin-right: auto;
+margin-left: auto;
 }
 .client-list{
   list-style-type: none;
@@ -445,12 +466,19 @@ margin-top: 20px;
   padding-top: 20px;
   fill: #AFB1B8;
 }
-.client-item a:hover{
+.client-item a:hover,.client-item a:focus,
+ .client-item a:hover svg, .client-item a:focus svg{
+  fill: var(--highlightColor);
+  color: var(--highlightColor);
+}
+ 
+.client-item a:hover,.client-item:focus,
+ .client-item:hover svg, .client-item:focus svg{
   border-color:#2196F3;
-}
-.client-item:hover svg{
   fill:#2196F3;
+
 }
+
 .client-item:not(:last-child){
   margin-right: 30px;
 }
